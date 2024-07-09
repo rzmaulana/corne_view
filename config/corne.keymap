@@ -24,17 +24,6 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 // right-hand keys
 #define THUMBS 30 31 32 33 34 35
 
-#define TAPPING_TERM 200
-#define QUICK_TAP    100
-
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    timeout-ms = <25>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-  };
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS SPACE SINGLE_QUOTE DOUBLE_QUOTES EXCLAMATION QUESTION BACKSPACE>;
 }; 
@@ -49,58 +38,7 @@
     tapping-term-ms = <TAPPING_TERM>;
 };
 
-/ 
- 
-{
-
- behaviors {
-       hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        hml: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;             // delay positional check until key-release
-        };
-
-         hmr: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;             // delay positional check until key-release
-        };
-
-        hs: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    }; 
-
 #define AS(keycode) &as LS(keycode) keycode
-
 / {
     chosen {
       zmk,matrix_transform = &five_column_transform;
