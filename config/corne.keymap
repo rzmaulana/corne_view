@@ -104,7 +104,12 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(f1,&kp F1, 10 20, DEFAULT RAISE LOWER) 
+                COMBO(escape, &kp ESC, 0 1, DEFAULT RAISE LOWER) 
+                COMBO(tab, &kp TAB, 1 2, DEFAULT RAISE LOWER) 
+                COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT RAISE LOWER) 
+                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT RAISE LOWER) 
+
+                COMBO(f1,&kp F1, 10 20, DEFAULT RAISE LOWER) 
                 COMBO(f2,&kp F2, 11 21, DEFAULT RAISE LOWER)
                 COMBO(f3,&kp F3, 12 22, DEFAULT RAISE LOWER) 
                 COMBO(f4,&kp F4, 13 23, DEFAULT RAISE LOWER) 
