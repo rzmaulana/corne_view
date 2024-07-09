@@ -131,11 +131,6 @@
                 COMBO(f9,&kp F9, 18 28, DEFAULT RAISE LOWER) 
                 COMBO(f10,&kp F10, 19 29, DEFAULT RAISE LOWER)
 
-                COMBO(BTNEXT,&bt BT_NXT, 5 6, DEFAULT RAISE LOWER)
-                COMBO(BTPRV,&bt BT_PRV, 6 7, DEFAULT RAISE LOWER)
-                COMBO(BT1,&bt BT_SEL 0, 7 8, DEFAULT RAISE LOWER)
-                COMBO(BT2,&bt BT_SEL 1, 8 9, DEFAULT RAISE LOWER)
-
         };
     };
 
