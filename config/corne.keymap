@@ -132,7 +132,7 @@
                 COMBO(btsel1,&bt BT_SEL 0, 10 19, DEFAULT RAISE LOWER) 
                 COMBO(btsel2,&bt BT_SEL 1, 20 29, DEFAULT RAISE LOWER) 
                 COMBO(btnext,&bt BT_NXT, 5 6, DEFAULT RAISE LOWER) 
-                COMBO(btprev,&bt BT_PRV, 7 8, DEFAULT RAISE LOWER) 
+                COMBO(btprev,&bt BT_PRV, 6 7, DEFAULT RAISE LOWER) 
                 COMBO(gaming,&tog 2, 24 25, DEFAULT RAISE LOWER)
     };
 
