@@ -104,7 +104,23 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(f1,&kp F1, 10 20, DEFAULT RAISE LOWER) 
+                COMBO(escape, &kp ESC, 0 1, DEFAULT RAISE LOWER) 
+                COMBO(tab, &kp TAB, 1 2, DEFAULT RAISE LOWER) 
+                COMBO(page_up, &kp PAGE_UP, 2 3, DEFAULT RAISE LOWER) 
+                COMBO(page_down, &kp PAGE_DOWN, 3 4, DEFAULT RAISE LOWER) 
+
+                COMBO(exclamation,&kp EXCL, 0 10, DEFAULT RAISE LOWER) 
+                COMBO(alias,&kp AT, 1 11, DEFAULT RAISE LOWER)
+                COMBO(hash,&kp HASH, 2 12, DEFAULT RAISE LOWER) 
+                COMBO(dollar,&kp DOLLAR, 3 13, DEFAULT RAISE LOWER) 
+                COMBO(percent,&kp PERCENT, 4 14, DEFAULT RAISE LOWER) 
+                COMBO(caret,&kp CARET, 5 15, DEFAULT RAISE LOWER) 
+                COMBO(ampersand,&kp AMPS, 6 16, DEFAULT RAISE LOWER) 
+                COMBO(asterisk,&kp ASTRK, 7 17, DEFAULT RAISE LOWER) 
+                COMBO(leftpar,&kp LPAR, 8 18, DEFAULT RAISE LOWER) 
+                COMBO(rightpar,&kp RPAR, 9 19, DEFAULT RAISE LOWER) 
+
+                COMBO(f1,&kp F1, 10 20, DEFAULT RAISE LOWER) 
                 COMBO(f2,&kp F2, 11 21, DEFAULT RAISE LOWER)
                 COMBO(f3,&kp F3, 12 22, DEFAULT RAISE LOWER) 
                 COMBO(f4,&kp F4, 13 23, DEFAULT RAISE LOWER) 
@@ -115,9 +131,12 @@
                 COMBO(f9,&kp F9, 18 28, DEFAULT RAISE LOWER) 
                 COMBO(f10,&kp F10, 19 29, DEFAULT RAISE LOWER)
 
-        KP_1 {
-            bindings = <&kp NUMBER_1>;
-            key-positions = <0 10>;
+                COMBO(BTNEXT,&bt BT_NXT, 5 6, DEFAULT RAISE LOWER)
+                COMBO(BTPRV,&bt BT_PRV, 6 7, DEFAULT RAISE LOWER)
+                COMBO(BT1,&bt BT_SEL 0, 7 8, DEFAULT RAISE LOWER)
+                COMBO(BT2,&bt BT_SEL 1, 8 9, DEFAULT RAISE LOWER)
+                COMBO(CLR,&bt BT_CLR, 7 8 9, DEFAULT RAISE LOWER)
+
         };
     };
 
