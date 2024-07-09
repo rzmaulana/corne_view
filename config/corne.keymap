@@ -135,7 +135,6 @@
                 COMBO(BTPRV,&bt BT_PRV, 6 7, DEFAULT RAISE LOWER)
                 COMBO(BT1,&bt BT_SEL 0, 7 8, DEFAULT RAISE LOWER)
                 COMBO(BT2,&bt BT_SEL 1, 8 9, DEFAULT RAISE LOWER)
-                COMBO(CLR,&bt BT_CLR, 7 8 9, DEFAULT RAISE LOWER)
 
         };
     };
