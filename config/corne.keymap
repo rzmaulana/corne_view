@@ -102,12 +102,7 @@
   ╰──────╮ 30  31  32  │ 33  34  35 ╭────────╯ 
           ╰────────────┴───────────╯             */
 
-    combos {
-        compatible = "zmk,combos";
 
-                COMBO(escape, &kp ESC, 0 1, DEFAULT RAISE LOWER) 
-
-        };
     };
 
     chosen { zmk,matrix_transform = &five_column_transform; };
