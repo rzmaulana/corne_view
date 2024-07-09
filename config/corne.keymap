@@ -128,6 +128,10 @@
                 COMBO(f8,&kp F8, 17 27, DEFAULT RAISE LOWER) 
                 COMBO(f9,&kp F9, 18 28, DEFAULT RAISE LOWER) 
                 COMBO(f10,&kp F10, 19 29, DEFAULT RAISE LOWER)
+                COMBO(btclr,&bt BT_CLR, 0 9, DEFAULT RAISE LOWER)
+                COMBO(btsel1,&bt BT_SEL 0, 10 19, DEFAULT RAISE LOWER) 
+                COMBO(btsel2,&bt BT_SEL 1, 20 29, DEFAULT RAISE LOWER) 
+                COMBO(gaming,&tog 2, 24 25, DEFAULT RAISE LOWER)
 
         KP_1 {
             bindings = <&kp NUMBER_1>;
