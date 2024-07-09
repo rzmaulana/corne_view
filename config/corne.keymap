@@ -132,11 +132,6 @@
                 COMBO(btsel1,&bt BT_SEL 0, 10 19, DEFAULT RAISE LOWER) 
                 COMBO(btsel2,&bt BT_SEL 1, 20 29, DEFAULT RAISE LOWER) 
                 COMBO(gaming,&tog 2, 24 25, DEFAULT RAISE LOWER)
-
-        KP_1 {
-            bindings = <&kp NUMBER_1>;
-            key-positions = <0 10>;
-        };
     };
 
     chosen { zmk,matrix_transform = &five_column_transform; };
